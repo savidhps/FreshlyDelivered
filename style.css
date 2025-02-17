@@ -1,0 +1,329 @@
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #ffcc00;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+header .icons {
+    display: flex;
+    gap: 1rem;
+}
+
+header .icons i {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+header .icons i:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background: url('./pexels-catscoming-1907227.jpg') no-repeat center/cover;
+    min-height: 70vh;
+    color: white;
+    position: relative;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1:hover {
+    transform: scale(1.05);
+    color: var(--secondary-color);
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.features {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.features .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.features .feature {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 300px;
+}
+
+.features .feature img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.features .feature h3 {
+    margin-bottom: 0.5rem;
+}
+
+.menu {
+    padding: 40px 5%;
+    background-color: var(--background-color);
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.menu .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu .menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    position: relative;
+}
+
+.menu .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.menu .menu-item img:hover {
+    transform: scale(1.2);
+}
+
+.menu .menu-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.menu .menu-item .price {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.menu .menu-item .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+footer p span {
+    color: var(--primary-color);
+}
+
+.contact {
+    padding: 2rem 5%;
+    background-color: var(--background-color);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact form .box {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact form .btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.contact form .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.review {
+    padding: 2rem 5%;
+    background-color: var(--background-color);
+}
+
+.review h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.review .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.review .review-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.review .review-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.review .review-card p {
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+.box{
+    background-color: #fbf8f8;
+    height: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.h4s{
+    margin-top: 7px;
+}
+.star{
+    color: #28a745;
+}
